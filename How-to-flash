@@ -1,0 +1,7 @@
+Once you have the .hex compiled from:
+https://config.qmk.fm/#/omkbd/ergodash/rev1/LAYOUT_4key_2u_inner
+
+run this command and click the button on the half with the usb plugged
+you have 5 seconds... 
+
+sleep 5 && sudo avrdude -p m32u4 -c avr109 -P /dev/ttyACM0 -U flash:w:<hex/file/path.hex?:i
